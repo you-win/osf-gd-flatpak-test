@@ -1,0 +1,25 @@
+app-id: org.youwin.openseefacegd
+runtime: org.freedesktop.Platform
+runtime-version: '21.08'
+sdk: org.freedesktop.Sdk
+command: openseeface-gd
+
+finish-args:
+- --socket=x11
+- --share=network
+- --socket=pulseaudio
+- --device=dri
+- --filesystem=home
+- --share=ipc
+- --device=all
+
+modules:
+- python3-requirements.json
+- name: openseeface-gd
+  buildsystem: simple
+  build-commands:
+  - ln -s OpenSeeFaceGD.x86_64 /app/bin/openseeface-gd
+  type: dir
+  path: openseeface-gd
+
+

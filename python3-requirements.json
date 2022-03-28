@@ -1,0 +1,136 @@
+{
+    "name": "python3-requirements",
+    "buildsystem": "simple",
+    "build-commands": [],
+    "modules": [
+        {
+            "name": "python3-flatbuffers",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"flatbuffers==2.0\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/3d/d0/26033c70d642fbc1e35d3619cf3210986fb953c173b1226709f75056c149/flatbuffers-2.0-py2.py3-none-any.whl",
+                    "sha256": "3751954f0604580d3219ae49a85fafec9d85eec599c0b96226e1bc0b48e57474"
+                }
+            ],
+            "cleanup": [
+                "*"
+            ]
+        },
+        {
+            "name": "python3-numpy",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"numpy==1.22.3\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/64/4a/b008d1f8a7b9f5206ecf70a53f84e654707e7616a771d84c05151a4713e9/numpy-1.22.3.zip",
+                    "sha256": "dbc7601a3b7472d559dc7b933b18b4b66f9aa7452c120e87dfb33d02008c8a18"
+                }
+            ],
+            "cleanup": [
+                "*"
+            ]
+        },
+        {
+            "name": "python3-opencv-python",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"opencv-python==4.5.5.64\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/3c/61/ee4496192ed27f657532fdf0d814b05b9787e7fc5122ed3ca57282bae69c/opencv-python-4.5.5.64.tar.gz",
+                    "sha256": "f65de0446a330c3b773cd04ba10345d8ce1b15dcac3f49770204e37602d0b3f7"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/64/4a/b008d1f8a7b9f5206ecf70a53f84e654707e7616a771d84c05151a4713e9/numpy-1.22.3.zip",
+                    "sha256": "dbc7601a3b7472d559dc7b933b18b4b66f9aa7452c120e87dfb33d02008c8a18"
+                }
+            ],
+            "cleanup": [
+                "*"
+            ]
+        },
+        {
+            "name": "python3-Pillow",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"Pillow==9.0.1\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/03/a3/f61a9a7ff7969cdef2a6e0383a346eb327495d20d25a2de5a088dbb543a6/Pillow-9.0.1.tar.gz",
+                    "sha256": "6c8bc8238a7dfdaf7a75f5ec5a663f4173f8c367e5a39f87e720495e1eed75fa"
+                }
+            ],
+            "cleanup": [
+                "*"
+            ]
+        },
+        {
+            "name": "python3-protobuf",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"protobuf==3.19.4\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/6c/49/f864b9fd6310d9a15ddae5b37d78dff1df0e2e1da476442fee062c6032b2/protobuf-3.19.4.tar.gz",
+                    "sha256": "9df0c10adf3e83015ced42a9a7bd64e13d06c4cf45c340d2c63020ea04499d0a"
+                }
+            ],
+            "cleanup": [
+                "*"
+            ]
+        },
+        {
+            "name": "python3-requirements-parser",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"requirements-parser==0.5.0\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/f8/89/612e3b326d87780dc1daf39af7696634f969838213cddae4f553f75d04ae/requirements_parser-0.5.0-py3-none-any.whl",
+                    "sha256": "e7fcdcd04f2049e73a9fb150d8a0f9d51ce4108f5f7cbeac74c484e17b12bcd9"
+                },
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/d4/43/5719a2912fad3df668ecae733f9cc72629e9da05d6721f38556d68978c22/types_setuptools-57.4.11-py3-none-any.whl",
+                    "sha256": "fbb0647569d6fb2f6bc472402265250c0ffa53e60180d2cbfee9e84f085921f0"
+                }
+            ],
+            "cleanup": [
+                "*"
+            ]
+        },
+        {
+            "name": "python3-types-setuptools",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"types-setuptools==57.4.11\" --no-build-isolation"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "url": "https://files.pythonhosted.org/packages/d4/43/5719a2912fad3df668ecae733f9cc72629e9da05d6721f38556d68978c22/types_setuptools-57.4.11-py3-none-any.whl",
+                    "sha256": "fbb0647569d6fb2f6bc472402265250c0ffa53e60180d2cbfee9e84f085921f0"
+                }
+            ],
+            "cleanup": [
+                "*"
+            ]
+        }
+    ]
+}
